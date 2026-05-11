@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Quiétude | Minimalist Daily Quotes & Inspiration</title>
+    <meta name="title" content="Quiétude | Minimalist Daily Quotes & Inspiration">
+    <meta name="description" content="Discover hand-picked wisdom, motivational quotes, and a peaceful reading experience. Less scroll, more pause with Quiétude. Browse hundreds of quotes on life, love, and mindfulness.">
+    <meta name="keywords" content="quotes, daily quotes, Quiétude, quietude app, motivational quotes, wisdom, mindfulness quotes, life quotes, philosophy, minimalist quotes, quote of the day, inspiration, aesthetic quotes">
+    <meta name="author" content="Quiétude">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Quietude05.github.io/quotes/">
+    <meta property="og:title" content="Quiétude | Minimalist Daily Quotes">
+    <meta property="og:description" content="A small, slow corner of the internet for big thoughts. Discover and save hand-picked quotes.">
+    <meta property="og:image" content="https://Quietude05.github.io/quotes/preview-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://Quietude05.github.io/quotes/">
+    <meta property="twitter:title" content="Quiétude | Minimalist Daily Quotes">
+    <meta property="twitter:description" content="A small, slow corner of the internet for big thoughts. Discover and save hand-picked quotes.">
+    <meta property="twitter:image" content="https://Quietude05.github.io/quotes/preview-image.jpg">
+
+    <link rel="canonical" href="https://Quietude05.github.io/quotes/">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Quiétude.</div>
+        <div class="nav-links">
+            <button class="nav-btn active" data-target="view-today">Today</button>
+            <button class="nav-btn" data-target="view-browse">Browse</button>
+            <button class="nav-btn" data-target="view-favorites">Favorites</button>
+            <button class="nav-btn" data-target="view-about">About</button>
+            <button class="nav-btn" data-target="view-contact">Contact</button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="view-today" class="view-section active">
+            <div class="today-left">
+                <div class="quote-label">QUOTE OF THE DAY</div>
+                <blockquote class="main-quote" id="today-text">“Creativity is intelligence having fun.”</blockquote>
+                <cite class="main-author" id="today-author">— Albert Einstein</cite>
+                <div class="main-category" id="today-category">Creativity</div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="btn-next">
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Next quote
+                    </button>
+                    <button class="btn" id="btn-save-today">
+                        <svg viewBox="0 0 24 24" id="today-heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Save
+                    </button>
+                    <button class="btn" id="btn-copy">
+                        <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy
+                    </button>
+                    <button class="btn" id="btn-share">
+                        <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> Share
+                    </button>
+                </div>
+                <div class="tip">Tip: press <kbd>Space</kbd> for a new quote.</div>
+            </div>
+            <div class="today-right">
+                <div class="quote-mark-bg">“</div>
+            </div>
+        </section>
+
+        <section id="view-browse" class="view-section">
+            <div class="page-container">
+                <h1 class="page-header">Browse</h1>
+                <p class="page-subtitle">A massive, hand-picked library. Wander by theme or search for something specific.</p>
+                
+                <div class="controls-row">
+                    <div class="filters" id="browse-filters">
+                        <button class="filter-btn active" data-filter="All">All</button>
+                        <button class="filter-btn" data-filter="Wisdom">Wisdom</button>
+                        <button class="filter-btn" data-filter="Love">Love</button>
+                        <button class="filter-btn" data-filter="Motivation">Motivation</button>
+                        <button class="filter-btn" data-filter="Life">Life</button>
+                        <button class="filter-btn" data-filter="Creativity">Creativity</button>
+                        <button class="filter-btn" data-filter="Mindfulness">Mindfulness</button>
+                    </div>
+                    <input type="text" class="search-bar" placeholder="Search quotes or authors" id="search-input">
+                </div>
+
+                <div class="quotes-grid" id="browse-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="view-favorites" class="view-section">
+            <div class="page-container">
+                <h1 class="page-header">Favorites</h1>
+                <p class="page-subtitle">A private shelf for the lines that stayed with you.</p>
+                
+                <div class="quotes-grid" id="favorites-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="view-about" class="view-section">
+            <div class="page-container">
+                <div class="quote-label" style="margin-bottom:1rem;">ABOUT</div>
+                <h1 class="page-header" style="margin-bottom:2rem;">Less scroll, more pause.</h1>
+                
+                <div class="about-content">
+                    <p>Quiétude is a small, slow corner of the internet — a place to read one good sentence and let it stay with you for a while.</p>
+                    <p>Each day brings a new quote, drawn from a massive library of writers, philosophers, and quiet observers. Save the ones that resonate, browse by mood, and come back tomorrow.</p>
+                    <blockquote class="about-quote">“Nature does not hurry, yet everything is accomplished.”</blockquote>
+                    <cite class="main-author">— Lao Tzu</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-contact" class="view-section">
+            <div class="page-container">
+                <div class="quote-label" style="margin-bottom:1rem;">CONTACT</div>
+                <h1 class="page-header" style="margin-bottom:2rem;">Get in touch.</h1>
+                
+                <div class="about-content">
+                    <p>We would love to hear from you. Whether you have a favorite quote to share, feedback on the app, or just want to say hello.</p>
+                    
+                    <p style="margin-top: 2rem;">
+                        <strong>Email:</strong> <br>
+                        <a href="mailto:quietude05@gmail.com" style="color: var(--text-dark); text-decoration: none; border-bottom: 1px solid var(--accent-brown);">quietude05@gmail.com</a>
+                    </p>
+                    
+                    <p>
+                        <strong>Mobile:</strong> <br>
+                        <a href="tel:+918971787693" style="color: var(--text-dark); text-decoration: none; border-bottom: 1px solid var(--accent-brown);">8971787693</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>Quiétude — a small place for big thoughts.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
