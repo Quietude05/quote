@@ -5,6 +5,12 @@ let savedLikes = JSON.parse(localStorage.getItem('quietude_likes')) || [];
 // Format: [ "Quote Text", "Author", "Category" ]
 const rawData = [
     // --- Batch 1 & 2 (250 Quotes) ---
+    ["The universe is under no obligation to make sense to you.", "Neil deGrasse Tyson", "Wisdom"],
+    ["Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.", "Marie Curie", "Motivation"],
+    ["I have no special talent. I am only passionately curious.", "Albert Einstein", "Mindfulness"],
+    ["Science is not only a disciple of reason but, also, one of romance and passion.", "Stephen Hawking", "Motivation"],
+    ["Talk is cheap. Show me the code.", "Linus Torvalds", "Creativity"],
+    ["First, solve the problem. Then, write the code.", "John Johnson", "Wisdom"],
     ["Creativity is intelligence having fun.", "Albert Einstein", "Creativity"],
     ["The unexamined life is not worth living.", "Socrates", "Wisdom"],
     ["Knowing yourself is the beginning of all wisdom.", "Aristotle", "Wisdom"],
